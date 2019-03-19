@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+    <head>
+        <title>Welcome</title>
+        <script src="angular.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Name Calculator</h1>
+        <div ng-controller="MyFirstController">
+            Your name : <input type="text" ng-model="name" ng-keyup="displayVal();"><br/><br/>
+            The Numeric value of your name : {{val}}
+        </div>
+    </body>
+</html>
